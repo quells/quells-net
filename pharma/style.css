@@ -29,7 +29,7 @@ blockquote, a, em, b, u, small, strong, img
 
 .clear { clear: both; }
 
-body { text-align: center; background: rgb(56,52,30) url("header.jpg") top center no-repeat; background-attachment: fixed; font-family: Georgia, Times, Symbol, serif; font-size: 12pt; }
+body { text-align: center; background: rgb(56,52,30) url("http://assets.quells.net/pharma/header.jpg") top center no-repeat; background-attachment: fixed; font-family: Georgia, Times, Symbol, serif; font-size: 12pt; }
 
 .sleeve { width: 600px; margin: 150px auto; padding: 20px;
 -moz-box-shadow: 0px 0px 10px #000;
