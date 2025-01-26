@@ -2,6 +2,6 @@
 
 ![Light Bulb Comparison][light-bulbs]
 
-[light-bulbs]: http://quells.net/DP/proj/lightbulbs_sq.jpg
+[light-bulbs]: http://assets.quells.net/DP/proj/lightbulbs_sq.jpg
 
 Exploring energy efficiency at home in 2009.
