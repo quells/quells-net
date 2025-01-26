@@ -1,0 +1,10 @@
+#sleeve { width: 75%; margin: 5% auto 20px; }
+
+#title img { margin: 0 0 0 38.3%; }
+#title h1 { font-size: 30px; float: right;  width: 100%; margin: 14px 0 0; padding: 0; }
+
+#description { width: 100%; }
+.media { width: 100%; display: none; }
+.media#iphone { display: block; }
+
+ul { padding: 0 0 0 1em; }

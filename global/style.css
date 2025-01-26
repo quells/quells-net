@@ -1,0 +1,73 @@
+			/*------------------------------------
+
+			   created and developed by quells
+
+			please dont steal - im not *that* good
+
+			------------------------------------*/
+
+/*
+	Name: quells design
+	Date: Sept.16.2010
+*/
+
+				/*---
+				reset
+				---*/
+
+html, body, div, table, span, iframe, object, h1, h2, h3, h4, h5, h6, p,
+blockquote, a, em, b, u, small, strong, img
+{ outline: 0; margin: 0; padding: 0; }
+
+:focus { outline: 0; }
+
+* em { font-style: italic; }
+
+* b { font-style: bold; }
+
+* u { text-decoration: underline; }
+
+.clear { clear: both; }
+
+				/*--
+				text
+				--*/
+
+h1 {
+	font-family: inherit; text-align: left;
+	font-weight: normal; font-size: 48px;
+}
+
+p {
+	font-family: inherit; text-align: inherit;
+	font-weight: normal; font-size: 16px;
+	margin: 0 0 16px;
+}
+
+a, a:visited { color: #fff; text-decoration: none; }
+a:hover, a:active { color: #fff; text-decoration: none; border-bottom: 1px dotted #fff; }
+
+				/*----
+				layout
+				----*/
+
+body {
+	background: #000; background-image: url(images/bg.png); background-repeat: no-repeat; background-position: center top;
+	font-family: Helvetica, Arial, "Geneva", sans-serif, Symbol;
+	color: #fff;
+	text-align: center;
+}
+
+div.sleeve { margin: 0 auto; width: 840px; } /* Centering trick. */
+
+header { margin: 120px 0 120px 0; }
+
+nav { width: 120px; text-align: right; float: left; position: fixed; }
+	body#home nav p.home a { border-bottom: 1px solid #fff; }
+	body#projects nav p.projects a { border-bottom: 1px solid #fff; }
+	body#about nav p.about a { border-bottom: 1px solid #fff; }
+	body#contact nav p.contact a { border-bottom: 1px solid #fff; }
+
+article { width: 696px; text-align: left; float: right; }
+
+small p { font-size: 0.75em; }

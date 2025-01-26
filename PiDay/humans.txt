@@ -1,0 +1,28 @@
+/* AUTHOR */
+
+	Developer and designer: Kai Wells
+	Twitter: @quells
+	From: San Diego, CA, USA
+
+/* THANKS */
+
+	Commissioned by: Andrew Gloag
+	Testers:	Andrew Gloag
+				Jade Mohr
+				Amy Callahan
+				Patrick Callahan
+				Lilia Galvez
+				Sky Nichols
+	
+	The jQuery team for creating an excellent tool with detailed documentation
+	
+	Google Code for hosting jQuery, saving me several dollars in bandwidth fees
+	
+	SubtlePatterns.com for hosting many great free patterns, saving me several more dollars in bandwidth fees
+
+/* SITE */
+
+	Last update: Mar.3.2012
+	Language: English
+	Doctype: HTML5
+	IDE: TextMate and Google Chrome on Mac OS X, Safari on iOS 5, Browser on Android

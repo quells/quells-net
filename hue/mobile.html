@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<link rel="apple-touch-icon-precomposed" href="icon2.0.png">
+	<style>
+		/* http://meyerweb.com/eric/tools/css/reset/ 
+			   v2.0b1 | 201101                        */
+			
+		html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+		
+		/* HTML5 display-role reset for older browsers */
+		article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+		
+		body { line-height: 1; }
+		ol, ul { list-style: none; }
+		blockquote, q { quotes: none; }
+		blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+		table { border-collapse: collapse; border-spacing: 0; }
+		.clear { clear: both; }
+		
+		body { font-family: "Futura"; font-size: 40px; text-align: center; color: white; background: #8030a0; height: 640px; }
+		
+		.label { opacity: 0.5; position: absolute; width: 120px; }
+			#R { margin-top: 50px; }
+			#G { margin-top: 160px; }
+			#B { margin-top: 270px; }
+		.value { position: absolute; width: 320px; text-shadow: 0px -1px 0px black; }
+			#red { margin-top: 50px; }
+			#gre { margin-top: 160px; }
+			#blu { margin-top: 270px; }
+		.mode { opacity: 0.5; position: absolute; width: 320px; margin-top: 370px; }
+		#install {
+			font-size: 20px; background: rgba(0,0,0,0.5); padding: 10px;
+			border-radius: 10px; margin:363px 0px 0px 50px;
+			position: absolute; display: none;
+		}
+		#install-arrow {
+			width: 0; height: 0; display: none;
+			position: absolute; margin: 403px 0 0 150px;
+			border-left: 10px solid transparent;
+			border-right: 10px solid transparent;
+			border-top: 10px solid rgba(0,0,0,0.5);
+		}
+	</style>
+	<meta name="viewport" content="width=320, initial-scale=1.0, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<title>Hue Demo</title>
+</head>
+<body onorientationchange="updateOrientation();">
+	<p class="label" id="R">R</p>
+	<p class="label" id="G">G</p>
+	<p class="label" id="B">B</p>
+	<p class="value" id="red">128</p>
+	<p class="value" id="gre">48</p>
+	<p class="value" id="blu">160</p>
+	<p class="mode" id="mode">( )</p>
+	<p id="install">Add to Home Screen</p>
+	<div id="install-arrow"></div>
+	<script type="text/javascript">
+		// Scroll if not a web app
+		window.addEventListener("load",function() { setTimeout(function(){ window.scrollTo(0, 1); }, 0); });
+		var numTaps = 0;
+		// Popup if not a web app
+		if (!window.navigator.standalone) {
+			document.getElementById('mode').style.marginTop = '360px';
+			(numTaps) ? document.getElementById('install').style.display = 'none' : document.getElementById('install').style.display = 'block';
+			(numTaps) ? document.getElementById('install-arrow').style.display = 'none' : document.getElementById('install-arrow').style.display = 'block';
+		}
+		// Display nothing if sideways
+		function updateOrientation() {
+			switch(window.orientation) {
+                case -90: case 90: document.body.style.display = 'none'; break;
+                default: document.body.style.display = 'block'; break;
+            }
+		}
+		var redValue = document.getElementById("red");
+		var greenValue = document.getElementById("gre");
+		var blueValue = document.getElementById("blu");
+		var r = 129; var g = 49; var b = 161; var hex = 0;
+		var startX = 0; var startY = 0; var originalValue = 0; var segment = 0;
+		function updateDisplay() {
+			if (!window.navigator.standalone) {
+			document.getElementById('mode').style.marginTop = '360px';
+			(numTaps) ? document.getElementById('install').style.display = 'none' : document.getElementById('install').style.display = 'block';
+			(numTaps) ? document.getElementById('install-arrow').style.display = 'none' : document.getElementById('install-arrow').style.display = 'block';
+			}
+			var color = "rgba(" + (r-1) + "," + (g-1) + "," + (b-1) + ",1.0)";
+			document.body.style.background = color;
+			var luminance = Math.pow(0.241 * r*r + 0.691 * g*g + 0.068 * b*b, 0.5)/256;
+			if (luminance > 0.70) {
+				document.body.style.color = 'black';
+			} else {
+				document.body.style.color = 'white';
+			}
+			if (hex) {
+				document.getElementById('red').innerHTML = (r-1).toString(16);
+				document.getElementById('gre').innerHTML = (g-1).toString(16);
+				document.getElementById('blu').innerHTML = (b-1).toString(16);
+				document.getElementById('mode').innerHTML = '#';
+			} else {
+				document.getElementById('red').innerHTML = r-1;
+				document.getElementById('gre').innerHTML = g-1;
+				document.getElementById('blu').innerHTML = b-1;
+				document.getElementById('mode').innerHTML = '( )';
+			}
+		}
+		document.addEventListener('touchstart', function(event) {
+			event.preventDefault();
+			var touch = event.touches[0];
+			startX = touch.pageX; startY = touch.pageY;
+			segment = Math.floor(startY / 120);
+        	switch(segment) {
+        		case 0: originalValue = r; break;
+        		case 1: originalValue = g; break;
+        		case 2: originalValue = b; break;
+        		case 3: (hex) ? hex = 0 : hex = 1; updateDisplay();
+        		default: break;
+        	}
+        	numTaps++;
+		}, false);
+		document.addEventListener('touchmove', function(event) {
+			event.preventDefault();
+			var touch = event.touches[0];
+			var dX = 1 + (touch.pageX - startX) / 320;
+			switch(segment) {
+    			case 0: ((dX * originalValue + 1.1) > 256) ? r = 256 : r = Math.floor(dX * originalValue + 1.1); break;
+    			case 1: ((dX * originalValue + 1.1) > 256) ? g = 256 : g = Math.floor(dX * originalValue + 1.1); break;
+    			case 2: ((dX * originalValue + 1.1) > 256) ? b = 256 : b = Math.floor(dX * originalValue + 1.1); break;
+    			default: break;
+    		}
+    		updateDisplay();
+		}, false);
+	</script>
+</body>

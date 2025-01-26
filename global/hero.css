@@ -1,0 +1,114 @@
+/*
+http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+
+body {
+	font-family: 'Helvetica Neue', Helvetica, 'Comic Sans', Symbol, sans-serif;
+	font-size: 24px;
+	font-weight: normal;
+	text-align: center;
+	color: #000;
+/* 	background: #ceddd0; */
+}
+
+.container {
+	margin: 0 auto;
+	width: 100%; max-width: 50em;
+}
+
+header {
+	width: 100%;
+	max-width: 50em;
+	height: 40em;
+	background-image: url('quells.jpg');
+	text-align: right;
+	background-size: cover;
+	background-position: 10% 20%;
+}
+
+article {
+	background: rgba(255, 255, 255, 0.9);
+	width: 50%; height: 100%;
+	float: right;
+	margin-top: -30em;
+	margin-right: 5%;
+	padding: 1.4em 0;
+	border-radius: 1em;
+}
+
+h1 {
+	margin: 0 0.25em;
+	font-size: 5.66em;
+	font-weight: 200;
+	line-height: 110%;
+}
+
+h2 {
+	margin: 0 1em;
+	font-size: 1.4em;
+	line-height: 110%;
+}
+
+p {
+	font-size: 1em;
+	margin: 1em 2em;
+	text-align: left;
+	line-height: 141%;
+}
+
+a, a:visited, a:hover, a:active {
+	text-decoration: none;
+	border-bottom: 1px dotted #009ddc;
+	color: #009ddc;
+}
+
+a:hover, a:active {
+	border-bottom: 1px solid #009ddc;
+}
+
+@media screen and (max-width: 900px) {
+	body { font-size: 20px; }
+}
+
+@media screen and (max-width: 806px) {
+	body { font-size: 20px; }
+}
+
+@media screen and (max-width: 710px) {
+	body { font-size: 18px; }
+}
+
+@media screen and (max-width: 672px) {
+	body { font-size: 16px; }
+	h2 { margin-left: 0; margin-right: 0; }
+	article { width: 100%; margin: -8em auto 0; border-radius: 0; }
+}
+
+@media screen and (max-width: 538px) {
+	body { font-size: 14px; }
+	article { margin: -12em auto 0; }
+	h2, h3 { margin: 0.71em 2em; }
+}
+
+@media screen and (max-width: 446px) {
+	h2 { margin: 0.71em 4em; }
+}
+
+@media screen and (max-width: 400px) {
+	h1 { margin-left: 2em; }
+	h2 { margin: 0.71em 2.82em; }
+}
+
+@media screen and (max-width: 350px) {
+	h1 { font-size: 2.83em; padding: 0.5em 0.5em 0 0; }
+	h2 { margin: 0.35em 1.4em; }
+}

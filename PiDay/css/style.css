@@ -1,0 +1,116 @@
+/*
+	Author: Kai Wells aka quells
+	Title: HTH Pi Day Challenge 2012
+	Version: 1.2
+	Date: Mar.3.2012
+	
+	Changelog:
+	v1.2:
+		Reads 'class_fabric.png' from the subtlepatterns.com server to save personal bandwidth
+			Notes:
+			Looks slightly worse when that server is not available
+			Slight flicker as the image is loaded
+		Adds support for gradients in other modern browsers, notably Firefox and IE 10+
+		Tidied up for deployment
+	v1.1:
+		Updated for support for multiple levels
+		Gradient backgrounds implemented in Chrome and Safari only
+	v1.0:
+		Initial release with basic structure in place
+		Solid color backgrounds
+		Support for only level 1
+		Reads 'classy_fabric.png' from a local file
+*/
+
+body {
+	/* Thank you SubtlePatterns.com for having so many great free patterns! */
+	background: #333 url("http://subtlepatterns.com/patterns/classy_fabric.png") repeat;
+	text-align: center;
+	/* Not terribly important that a good font is used - the only text is the counter */
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+}
+
+.sleeve { width: 600px; height: 300px; margin: 0 auto; text-align: center; }
+	.counter {
+		width: 200px; height: 70px;
+		margin: 50px auto 0;
+		/* Only top left and right corners need to be rounded, as the .counter is 'behind' the .box */
+		-webkit-border-top-left-radius:  20px;
+		-webkit-border-top-right-radius: 20px;
+		-moz-border-radius-topleft: 	 20px;
+		-moz-border-radius-topright: 	 20px;
+		border-top-left-radius: 		 20px;
+		border-top-right-radius: 		 20px;
+		background: #444;
+		background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#444), to(#333));
+		background-image: 						-webkit-linear-gradient(top, #444, #333);
+		background-image: 						   -moz-linear-gradient(top, #444, #333);
+		background-image: 							-ms-linear-gradient(top, #444, #333);
+		background-image: 							 -o-linear-gradient(top, #444, #333);
+		-moz-box-shadow:    0 0 5px #222;
+		-webkit-box-shadow: 0 0 5px #222;
+		box-shadow: 		0 0 5px #222;
+		}
+		h2.count {
+			/* 2em x 16px/em = 32px */
+			font-size: 2em; text-align: center;
+			background: #fff;
+			background-image: -webkit-gradient(linear, left top, left bottom, from(#bbbbbb), color-stop(0.5, #ffffff), to(#666666));
+			background-image: 												-webkit-linear-gradient(top, #bbbbbb, #ffffff, #666666);
+			background-image: 												   -moz-linear-gradient(top, #bbbbbb, #ffffff, #666666);
+			background-image: 													-ms-linear-gradient(top, #bbbbbb, #ffffff, #666666);
+			background-image: 													 -o-linear-gradient(top, #bbbbbb, #ffffff, #666666);
+			float: left; padding: 10px; margin: 9px;
+			-moz-box-shadow:    inset 0 0 10px #000;
+			-webkit-box-shadow: inset 0 0 10px #000;
+			box-shadow: 		inset 0 0 10px #000;
+			}
+			h2.count#hundreds { margin-left: 25px; }
+	.box {
+		height: 140px;
+		-webkit-border-radius: 20px;
+		-moz-border-radius:    20px;
+		border-radius:		   20px;
+		margin: 0 auto;
+		background: #999;
+		background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#999999), to(#666666));
+		background-image: 						-webkit-linear-gradient(top, #999999, #666666);
+		background-image: 						   -moz-linear-gradient(top, #999999, #666666);
+		background-image: 						    -ms-linear-gradient(top, #999999, #666666);
+		background-image: 							 -o-linear-gradient(top, #999999, #666666);
+		-moz-box-shadow:    0 0 5px #111;
+		-webkit-box-shadow: 0 0 5px #111;
+		box-shadow: 		0 0 5px #111;
+		}
+		body#five * .box, body#five * .buttons     { width: 340px; }
+		body#six * .box, body#six * .buttons     { width: 390px; }
+		body#seven * .box, body#seven * .buttons     { width: 440px; }
+		body#nine * .box, body#nine * .buttons { width: 540px; }
+		body#eight * .box, body#eight * .buttons   { width: 490px; }
+		.buttons { height: 40px; padding: 50px 45px; }
+			.button {
+				cursor: pointer;
+				width: 40px; height: 40px;
+				float: left; margin: 0 5px;
+				-webkit-border-radius: 20px;
+				-moz-border-radius:    20px;
+				border-radius:		   20px;
+				background: #933;
+				background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#882222), to(#AA4444));
+				background-image: 						-webkit-linear-gradient(top, #882222, #AA4444);
+				background-image: 						   -moz-linear-gradient(top, #882222, #AA4444);
+				background-image: 						    -ms-linear-gradient(top, #882222, #AA4444);
+				background-image: 							 -o-linear-gradient(top, #882222, #AA4444);
+				-moz-box-shadow: 	0 -1px 3px #333, 0 1px 3px #bbb;
+				-webkit-box-shadow: 0 -1px 3px #333, 0 1px 3px #bbb;
+				box-shadow: 		0 -1px 3px #333, 0 1px 3px #bbb;
+				}
+			.on {
+				background: #3c3;
+				background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#11EE11), to(#44BB44));
+				background-image: 					    -webkit-linear-gradient(top, #11EE11, #44BB44);
+				background-image: 						   -moz-linear-gradient(top, #11EE11, #44BB44);
+				background-image: 							-ms-linear-gradient(top, #11EE11, #44BB44);
+				background-image: 							 -o-linear-gradient(top, #11EE11, #44BB44);
+			}

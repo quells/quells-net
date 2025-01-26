@@ -1,0 +1,80 @@
+/* meyers reset */
+
+html, body, div, span, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, b, cite, code,del, dfn, em, i, img, ins, kbd, q, samp, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent;}html {font-size:100.01%;}
+body {font-size:1em; line-height:1.5;}
+caption, cite, code, dfn, th, var {font-style:normal; font-weight:normal;}
+h1, h2, h3, h4, h5, h6 {font-weight:normal;}
+blockquote, q {quotes:none;}
+blockquote:before, blockquote:after, q:before, q:after {content:''; content:none;}
+:focus {outline:0;}
+ins {text-decoration:underline;}
+del {text-decoration:line-through;}
+table {border-collapse:collapse; border-spacing:0;} /* still needs cellspacing="0" */
+
+body {
+	background: #2b2b31;
+	font-size: 14px;
+	text-align: center;
+}
+
+h1, h2, h3, h4 { font-weight: normal; }
+
+h1 {
+	color: white;
+	font-family: 'Vollkorn', 'Comic Sans', Georgia, 'Times New Roman', 'Times', serif;
+	font-size: 5.0625em; line-height: 1em;
+	padding: 0.66em 0 0;
+}
+
+h2 {
+	color: white;
+	font-family: 'Lato', 'Comic Sans', Helvetica, Arial, sans-serif; font-weight: 300;
+	font-size: 3.375em; text-align: left;
+	padding: 1em 0.89em 0.5em; clear: both;
+}
+
+h3 {
+	font-family: 'Lato', 'Comic Sans', Helvetica, Arial, sans-serif; font-weight: 400;
+	font-size: 2.25em; text-align: center;
+	line-height: 1.2em; padding-bottom: 0.6em;
+}
+
+p {
+	font-family: 'Vollkorn', 'Comic Sans', Georgia, 'Times New Roman', 'Times', serif;
+	font-size: 1em; line-height: 1.5em; padding-bottom: 1em;
+}
+
+section { width: 1664px; margin: 0 auto; }
+
+article {
+	width: 25em; min-height: 10.3em;
+	padding: 1.5em 1.5em 0.5em; margin: 1.5em 0 0 1.5em; float: left;
+	background: #ffffff;
+	text-align: left;
+	border-radius: 1em;
+	border: 1px solid #888870;
+}
+
+img { margin: 0 0 0 20px; width: 310px; height: 310px; border-radius: 4px; }
+
+@media all and (max-width: 1664px) {
+	section { width: 1248px; }
+}
+
+@media all and (max-width: 1248px) {
+	section { width: 832px; }
+}
+
+@media all and (max-width: 832px) {
+	section { width: 640px; }
+	article { margin: 0 0 1.43em 1.43em; width: 17em; border: 0; }
+	h1 { font-size: 3.375em; }
+	h2 { font-size: 2.25em; }
+	h3 { font-size: 1.5em; }
+	img { width: 20em; height: 20em; margin: 0 -1.5em; border-radius: 0; }
+	p { line-height: 1.2em; }
+}
+
+@media all and (max-width: 640px), all and (max-device-width: 640px) {
+	section { width: 320px; }
+}

@@ -1,0 +1,66 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+		   v2.0b1 | 201101                        */
+		
+		html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+		
+		/* HTML5 display-role reset for older browsers */
+		article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+		
+		body { line-height: 1; }
+		ol, ul { list-style: none; }
+		blockquote, q { quotes: none; }
+		blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+		table { border-collapse: collapse; border-spacing: 0; }
+		.clear { clear: both; }
+		
+		body {
+			font-family: "Helvetica Neue", Helvetica, Symbol, sans-serif;
+			font-size: 16px;
+			text-align: center;
+			background-color: black;
+			background-image: -webkit-radial-gradient(50% 10%, circle, #8030a0, #000000);
+			background-image:    -moz-radial-gradient(50% 10%, circle, #8030a0, #000000);
+			background-image:      -o-radial-gradient(50% 10%, circle, #8030a0, #000000);
+			background-image:         radial-gradient(50% 10%, circle, #8030a0, #000000);
+			background-attachment: fixed;
+		}
+		
+		#sleeve {
+			width: 840px; height: 100%;
+			margin: 5% auto 20px;
+			padding: 30px;
+			text-align: center;
+			background: white;
+			border: 1px solid #888;
+			-webkit-border-radius: 22px;
+			   -moz-border-radius: 22px;
+			     -o-border-radius: 22px;
+			        border-radius: 22px;
+			box-shadow: 0px 0px 7px 0px black;
+		}
+		#description { float: left; width: 420px; }
+		.media { float: right; }
+			#iphone { display: none; }
+		
+		h1, h2, h4 { font-family: Futura, "Century Gothic", sans-serif; font-weight: normal; }
+		
+		h1 { font-size: 3em; text-align: center; padding: 5px 20px 30px; float: left; }
+		h2 { font-size: 2em; text-align: center; padding: 10px 0 0; }
+		h4 { font-size: 1.2em; padding: 15px 0 5px; text-align: left; }
+		
+		p { padding: 0 0 10px; text-align: left; }
+		b { font-weight: bold; }
+		
+		ul { list-style: square; padding: 0 0 0 2em; text-align: left; }
+			li { padding: 0 0 5px; text-align: left; }
+		
+		ul#faqlist li { padding-bottom: 10px; }
+		
+		#title img {
+			float:left; margin: 0 0 0 197px;
+			box-shadow: 0px 0px 3px black;
+			-webkit-border-radius: 9px;
+			   -moz-border-radius: 9px;
+			     -o-border-radius: 9px;
+			        border-radius: 9px;
+		}

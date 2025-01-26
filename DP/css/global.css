@@ -1,0 +1,56 @@
+/*
+	Name: Grid Portfolio - Global
+	Date: Mar.7.2012
+	By quells
+*/
+
+.focus { background: red; }
+
+em { font-style: italic; }
+
+body {
+	background: #111 url("https://cdn.quells.net/DP/img/bglighter.jpg") no-repeat;
+	background-attachment: scroll;
+	font-family: "Helvetica Neue", Helvetica, Arial, Symbol, sans-serif;
+	font-size: 16px;
+	color: white; text-align: center;
+}
+
+.container { margin: 0 auto; }
+
+h1 { font-weight: normal; font-size: 48px; text-transform: uppercase; text-align: left; padding: 24px 0 12px 5px; }
+	h1 a, h1 a:visited, h1 a:hover, h1 a:active { color: #fff; text-decoration: none; }
+	h1 span { font-size: 0.5em; }
+
+nav { text-align: left; padding: 12px 0 0 5px; text-transform: uppercase; }
+nav a, nav a:hover, nav a:visited, nav a:active { color: #fff; font-size: 12px; text-decoration: none; }
+	nav a, nav a:visited { border-bottom: 0; }
+	nav a:hover, nav a:active { border-bottom: 1px dotted #fff; }
+	body#home nav a.home, body#work nav a.work, body#resume nav a.resume, body#internship nav a.internship, body#about nav a.about { border-bottom: 1px solid #fff; }
+
+.push { width: 1px; height: 40px; }
+
+h2.types { padding: 0 0 0 5px; }
+
+section { width: 310px; height: 520px; margin: 0 5px 15px; float: left; }
+	.double { width: 630px; height: auto; }
+
+section img { padding: 0 0 12px; }
+
+h2 { font-size: 24px; padding: 6px 0 0 0; text-transform: uppercase; }
+	h2 a, h2 a:hover, h2 a:visited, h2 a:active { color: #fff; text-decoration: none; }
+	h2 a:hover, h2 a:active { border-bottom: 1px solid #fff; }
+	
+	h2.types { text-align: left; }
+	h2.types a.on { border-bottom: 1px solid #fff; }
+
+p { font-size: 16px; padding: 0 0 12px 0; line-height: 18px; text-align: left; }
+	p a, p a:hover, p a:visited, p a:active { color: white; text-decoration: none; }
+	p a, p a:visited { border-bottom: 1px dotted #fff; }
+	p a:hover, p a:active { border-bottom: 1px solid #fff; }
+	
+	p.center { text-align: center; }
+	a.tweettime { float: right; }
+
+/* Nov.14.2012 Edit: Improves look of white text on dark background, which has always bothered me slightly. */
+h1, h2, h3, p { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }

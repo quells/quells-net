@@ -1,0 +1,58 @@
+/*
+	Red: #e8112d
+*/
+
+html { overflow-y: scroll; }
+
+body {
+	font-family: Helvetica, Arial, Symbol, sans-serif;
+	font-size: 14px;
+	text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+
+.sleeve { width: 960px; margin: 20px auto; text-align: left; }
+
+#logo { float: left; margin: 8px 0 0; }
+
+h1 { font-size: 7em; float: right; margin: 0 0 10px;}
+
+nav { background: black; width: 960px; height: 50px; }
+
+nav ul li:first-child:hover a:after { content: "r"; }
+nav ul ul li:first-child:hover a:after { content: ""; }
+
+/* 
+	LEVEL ONE
+*/
+nav ul { position: relative; }
+nav ul li { float: left; zoom: 1; }
+nav ul a:hover, nav ul a:active { color: #fff; }
+nav ul li a { display: block; width: 83px; padding: 18px; border-right: 1px solid #fff; color: #fff; }
+nav ul li.hover { background: #e8112d; color: #fff; position: relative; }
+nav ul li.hover a { color: #fff; }
+nav ul li a, nav ul li a:visited, nav ul li a:hover, nav ul li a:active { text-decoration: none; }
+
+/* 
+	LEVEL TWO
+*/
+nav ul ul { width: 119px; visibility: hidden; position: absolute; top: 100%; left: 0; }
+nav ul ul li { font-weight: normal; background: #000; color: #fff; 
+									  border-top: 1px solid #fff; float: none; }
+									  
+                                    /* IE 6 & 7 Needs Inline Block */
+nav ul ul li a { border-right: none; width: 100%; display: inline-block; }
+
+/* 
+	LEVEL THREE
+*/
+nav ul ul ul { width: 179px; left: 100%; top: 0; }
+nav ul ul ul li { border: 1px solid white; border-top: none; }
+nav ul ul ul li:first-child { border-top: 1px solid white; margin-top: -1px; }
+nav ul li:hover > ul { visibility: visible; }
+
+/*
+	LEVEL FOUR
+*/
+nav ul ul ul ul { width: 279px; }

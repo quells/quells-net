@@ -1,0 +1,83 @@
+			/*------------------------------------
+
+			   created and developed by quells
+
+			please dont steal - im not *that* good
+
+			------------------------------------*/
+
+/*
+	Name: Project Name
+	Date: Mon.Da.Yr
+*/
+
+										/*---
+										reset
+										---*/
+
+html, body, div, table, span, iframe, object, h1, h2, h3, h4, h5, h6, p,
+blockquote, a, em, b, u, small, strong, img
+{ outline: 0; margin: 0; padding: 0; }
+
+:focus { outline: 0; }
+
+* em { font-style: italic; }
+
+* b { font-style: bold; }
+
+* u { text-decoration: underline; }
+
+.clear { clear: both; }
+
+body { text-align: center; background: rgb(56,52,30) url("header.jpg") top center no-repeat; background-attachment: fixed; font-family: Georgia, Times, Symbol, serif; font-size: 12pt; }
+
+.sleeve { width: 600px; margin: 150px auto; padding: 20px;
+-moz-box-shadow: 0px 0px 10px #000;
+-webkit-box-shadow: 0px 0px 10px #000;
+box-shadow: 0px 0px 10px #000;
+-webkit-border-radius: 15px;
+-moz-border-radius: 15px;
+border-radius: 15px; background: white; }
+
+p { text-align: justify; }
+nav p { text-align: center; }
+
+a, a:visited { color: black; }
+a:active, a:hover { color: red; }
+
+h1 { font-family: "Impact"; font-size: 36px; font-weight: normal; padding: 10px 0 25px 0; }
+h2 { font-size: 24px; font-weight: normal; text-align: left; }
+h3 { font-size: 18px; font-weight: normal; }
+
+nav { padding: 0 0 20px 0; }
+
+ul, li { text-align: left; }
+
+.staffpic { float: left; width: 200px; height: 200px; }
+
+.staffinfo { float: right; width: 380px; }
+
+div.donate {
+	background-color: #666;
+	background-image: -webkit-gradient(
+	    linear,
+	    left bottom,
+	    left top,
+	    color-stop(0, rgb(134,175,194)),
+	    color-stop(1.0, rgb(201,230,255))
+	);
+	background-image: -moz-linear-gradient(
+	    center bottom,
+	    rgb(134,175,194) 0%,
+	    rgb(201,230,255) 100%
+	);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #99C;
+	padding: 3px; width: 100px;
+	margin: 0 auto;
+	}
+	div.donate p { text-align: center; }
+		div.donate p a, div.donate p a:visited { text-decoration: none; color: #006; }
+		div.donate p a:hover, div.donate p a:active { text-decoration: none; color: #000; }

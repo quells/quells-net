@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- quells -->
+<head>
+	<meta charset="UTF-8" />
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<!-- Makes IE compatible with HTML5 elements like nav, header, article, section, etc. -->
+	<meta name="viewport" content="width=device-width, initial-scale=0.75" />
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link type="text/plain" rel="author" href="humans.txt" />
+	<title>Pi Day Extra Challenge</title>
+</head>
+<body id="nine">
+	<div class="sleeve">
+		<div class="counter">
+			<h2 class="count" id="hundreds">0</h2>
+			<h2 class="count" id="tens">0</h2>
+			<h2 class="count" id="ones">0</h2>
+			<div class="clear"></div>
+		</div>
+		<div class="box">
+			<div class="buttons">
+				<div class="button" id="1"></div>
+				<div class="button" id="2"></div>
+				<div class="button" id="3"></div>
+				<div class="button" id="4"></div>
+				<div class="button" id="5"></div>
+				<div class="button" id="6"></div>
+				<div class="button" id="7"></div>
+				<div class="button" id="8"></div>
+				<div class="button" id="9"></div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>	<!-- END div.sleeve -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script> $(document).ready(function() { $.getScript("http://quells.net/PiDay/js/three.js"); }); </script>
+</body>

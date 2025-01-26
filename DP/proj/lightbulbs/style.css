@@ -1,0 +1,72 @@
+			/*------------------------------------
+
+			   created and developed by quells
+
+			please dont steal - im not *that* good
+
+			------------------------------------*/
+
+/*
+	Name: Light Bulbs
+	Date: Mar.26.09
+*/
+
+										/*---
+										reset
+										---*/
+html, body, div, span, h1, h2, h3, h4, p, a, ul, li, table {
+	outline: 0;
+	margin: 0;
+	padding: 0;
+}
+
+										/*--------
+										text stuff
+										--------*/
+p { font-family: inherit; font-size: 1.4em; text-align: justify; text-indent: 2.0em; }
+
+h2 { font-family: inherit; font-size: 2.4em; font-weight: normal; padding-bottom: 10px; text-align: left; }
+
+h3 { font-family: inherit; font-size: 2.0em; font-weight: normal; padding-bottom: 10px; text-align: left; }
+
+										/*----------
+										layout stuff
+										----------*/
+body {
+	background: #333;
+	text-align: center;		/* center div trick */
+	font-family: Helvetica, "Geneva", Arial, Symbol, sans-serif;
+	font-size: 62.5%;
+}
+
+div#wrap { width: 600px; margin: 0 auto; /* center div trick */ }
+
+h1#lightbulbs { width: 600px; height: 150px; position: relative;
+				/* background: url("images/header.png") no-repeat; color: transparent; */ }
+
+div#nav { position: relative; width: 600px; height: 75px; }
+	ul.menu { position: relative; list-style: none; text-align: left; }
+		ul.menu li a, ul.menu li a:visited,
+		ul.menu li a:hover, ul.menu li a:active { position: absolute; width: 150px; height: 75px; top: 0; }
+			ul.menu li a.incan { left: 0px; }
+			ul.menu li a.cfl { left: 150px; }
+			ul.menu li a.led { left: 300px; }
+			ul.menu li a.halo { left: 450px; }
+
+table.menu { position: relative; }
+	table.menu tr td { width: 150px; height: 75px; }
+		table.menu tr td a { width: 150px; height: 75px; font-size: 2.0em; color: transparent; }
+			table.menu tr td.incan { background: url("images/incan-icon.png"); }
+			table.menu tr td.cfl { background: url("images/cfl-icon.png"); }
+			table.menu tr td.led { background: url("images/led-icon.png"); }
+			table.menu tr td.halo { background: url("images/halo-icon.png"); }
+
+div.text { width: 570px; padding: 15px 15px 0; background: white; }
+
+div.text table { font-size: 1.2em; }
+
+div.text span { text-align: center; font-size: 12px; }
+
+.floatright { float: right; }
+
+.bottom { width: 600px; height: 30px; background: url("images/bottom.png"); }
