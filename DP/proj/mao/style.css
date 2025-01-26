@@ -55,7 +55,7 @@ a:hover, a:active {
 										document stuff
 										------------*/
 body {
-	background: black url("https://cdn.quells.net/DP/proj/mao/images/bg.jpg") 50% top fixed no-repeat;
+	background: black url("http://assets.quells.net/DP/proj/mao/images/bg.jpg") 50% top fixed no-repeat;
 	font-family: Helvetica, "Geneva", Arial, Symbol, sans-serif;
 	font-size: 62.5%;		/* reset font size to 10px */
 	color: white;
